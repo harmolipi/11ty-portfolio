@@ -3,27 +3,30 @@ layout: layouts/base.njk
 section: project
 ---
 <div class="page-container">
-  <h1>
+  <h1 class="text-5xl">
     {% if emoji %}
       <span class="project-card__emoji">{{ emoji }}</span>
     {% endif %}
     {{title}}</h1>
   <hr>
   {% if tags %}
-    <div class="tags">
+    <p class="my-3">
       {% for tag in tags %}
-        <span class="tag">{{ tag }}</span>
+        {%- if tag != "project" -%}
+          {% set tagUrl %}/project-tags/{{ tag }}/{% endset %}
+        <a class="tag hover:bg-gray-300" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+        {%- endif -%}
       {% endfor %}
-    </div>
+    </p>
   {% endif %}
   {% if github %}
-    <a href="{{ github }}" class="btn btn-primary bg-red-700">
-      <i class="fab fa-github"></i>
+    <button href="{{ github }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-3 rounded text-sm">
       View on GitHub
-    </a>
+    </button>
   {% endif %}
-  <a href="{{ github }}" target="_blank">View on GitHub</a>
-  {{ layoutContent | safe }}
+  <div class="prose prose-lg">
+    {{ layoutContent | safe }}
+  </div>
   <nav>
     <a href="{{ '/projects/' | url }}">← View All Projects</a>
   </nav>
