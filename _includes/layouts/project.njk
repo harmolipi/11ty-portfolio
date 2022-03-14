@@ -9,6 +9,20 @@ section: project
     {% endif %}
     {{title}}</h1>
   <hr>
+  {% if tags %}
+    <div class="tags">
+      {% for tag in tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if github %}
+    <a href="{{ github }}" class="btn btn-primary bg-red-700">
+      <i class="fab fa-github"></i>
+      View on GitHub
+    </a>
+  {% endif %}
+  <a href="{{ github }}" target="_blank">View on GitHub</a>
   {{ layoutContent | safe }}
   <nav>
     <a href="{{ '/projects/' | url }}">← View All Projects</a>
