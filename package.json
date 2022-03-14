@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "start": "npx concurrently \"postcss ./src/_includes/assets/tailwind.css -d ./src/_includes/assets/css -w\" \"npx @11ty/eleventy --serve\"",
     "build": "npx @11ty/eleventy"
   },
   "repository": {
@@ -22,9 +22,17 @@
   "homepage": "https://github.com/tylerMRoderick/fernfolio-11ty-template",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
+    "cssnano": "^5.1.4",
     "luxon": "^1.25.0",
     "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.3.0"
+    "markdown-it-anchor": "^5.3.0",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^3.0.23"
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
