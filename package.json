@@ -4,7 +4,7 @@
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
     "start": "npx concurrently \"postcss ./src/_includes/assets/tailwind.css -d ./src/_includes/assets/css -w\" \"npx @11ty/eleventy --serve\"",
-    "build": "npx @11ty/eleventy"
+    "build": "npx postcss ./src/_includes/assets/tailwind.css -d ./src/_includes/assets/css && npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
