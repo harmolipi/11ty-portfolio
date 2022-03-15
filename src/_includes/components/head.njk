@@ -6,6 +6,7 @@
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or summary or metadata.description }}">
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% set css %}
+    {% include "assets/css/tailwind.css" %}
     {% include "assets/css/normalize.css" %}
     {% include "assets/css/variables.css" %}
     {% include "assets/css/base-styles.css" %}
@@ -14,7 +15,6 @@
     {% include "assets/css/site-footer.css" %}
     {% include "assets/css/blog.css" %}
     {% include "assets/css/projects.css" %}
-    {% include "assets/css/tailwind.css" %}
 
     {% if page.url == '/' %}
       {% include "assets/css/home-page.css" %}
