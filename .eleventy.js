@@ -75,10 +75,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // Don't process folders with static assets e.g. images
-  eleventyConfig.addPassthroughCopy('favicon.ico');
-  eleventyConfig.addPassthroughCopy('static/img');
-  eleventyConfig.addPassthroughCopy('admin');
-  eleventyConfig.addPassthroughCopy('_includes/assets/');
+  eleventyConfig.addPassthroughCopy('src/favicon.ico');
+  eleventyConfig.addPassthroughCopy('src/static/img');
+  eleventyConfig.addPassthroughCopy('src/admin');
+  eleventyConfig.addPassthroughCopy('src/_includes/assets/');
 
   /* Markdown Plugins */
   let markdownIt = require('markdown-it');
