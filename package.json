@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
-    "start": "npx concurrently \"postcss ./src/_includes/assets/tailwind.css -d ./src/_includes/assets/css -w\" \"npx @11ty/eleventy --serve\"",
-    "build": "npm-run-all build:css build:html",
-    "build:css": "postcss ./src/_includes/assets/tailwind.css -o ./src/_includes/assets/css/tailwind.css",
-    "build:html": "eleventy"
+    "start": "run-p start:css start:eleventy",
+    "start:css": "tailwindcss -i ./src/_includes/assets/tailwind.css -o ./src/_includes/assets/css/tailwind.css --watch",
+    "start:eleventy": "npx @11ty/eleventy --serve",
+    "build": "run-s build:css build:html",
+    "build:css": "tailwindcss -i ./src/_includes/assets/tailwind.css -o ./src/_includes/assets/css/tailwind.css",
+    "build:html": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
@@ -30,8 +32,6 @@
     "luxon": "^1.25.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.3.0",
-    "postcss": "^8.4.8",
-    "postcss-cli": "^9.1.0",
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {
