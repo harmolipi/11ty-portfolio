@@ -4,10 +4,10 @@
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
     "start": "run-p start:css start:eleventy",
-    "start:css": "tailwindcss -i ./src/_includes/assets/tailwind.css -o ./src/_includes/assets/css/tailwind.css --watch",
+    "start:css": "npx tailwindcss -i ./src/_includes/assets/tailwind.css -o ./src/_includes/assets/css/tailwind.css --watch",
     "start:eleventy": "npx @11ty/eleventy --serve",
     "build": "run-s build:css build:html",
-    "build:css": "tailwindcss -i ./src/_includes/assets/tailwind.css -o ./src/_includes/assets/css/tailwind.css",
+    "build:css": "npx tailwindcss -i ./src/_includes/assets/tailwind.css -o ./src/_includes/assets/css/tailwind.css",
     "build:html": "npx @11ty/eleventy"
   },
   "repository": {
