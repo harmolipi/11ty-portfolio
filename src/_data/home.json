@@ -1,6 +1,6 @@
 {
   "title": "Hello, my name is Niko",
-  "image": "/static/img/niko.jpg",
+  "image": "./static/img/niko.jpg",
   "subtitle": "An enthusiastic entry level full-stack developer with a passion for beautiful code",
   "image_alt": "Niko Birbilis"
 }

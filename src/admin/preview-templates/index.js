@@ -1,14 +1,14 @@
-import Post from '/src/admin/preview-templates/post.js';
-import Page from '/src/admin/preview-templates/page.js';
+import Post from './src/admin/preview-templates/post.js';
+import Page from './src/admin/preview-templates/page.js';
 
 // Register the Post component as the preview for entries in the blog collection
 CMS.registerPreviewTemplate('blog', Post);
 CMS.registerPreviewTemplate('pages', Page);
 
 // Register any CSS file on the home page as a preview style
-CMS.registerPreviewStyle('/src/_includes/assets/css/normalize.css');
-CMS.registerPreviewStyle('/src/_includes/assets/css/variables.css');
-CMS.registerPreviewStyle('/src/_includes/assets/css/base-styles.css');
+CMS.registerPreviewStyle('./src/_includes/assets/css/normalize.css');
+CMS.registerPreviewStyle('./src/_includes/assets/css/variables.css');
+CMS.registerPreviewStyle('./src/_includes/assets/css/base-styles.css');
 
 fetch('/')
   .then((response) => response.text())
