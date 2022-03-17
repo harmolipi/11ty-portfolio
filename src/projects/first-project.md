@@ -38,7 +38,7 @@ Go to https://harmolipi.github.io/enb-builder/ and fill out the fields as needed
 
 ### Setup
 
-```console
+```bash
 npm install
 npm start
 ```
