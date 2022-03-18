@@ -5,6 +5,10 @@ metaDescription: Tool for injecting OCMC's email template with updated content f
 date: 2022-02-18T00:00:00.000Z
 summary: Tool for injecting OCMC's email template with updated content for weekly email news bulletins.
 github: https://github.com/harmolipi/enb-builder
+image:
+  src: /static/img/enb-builder.jpg
+  alt: Electronic News Bulletin Builder
+website: https://harmolipi.github.io/enb-builder/
 tags:
   - React
   - JavaScript

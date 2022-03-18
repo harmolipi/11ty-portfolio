@@ -19,6 +19,9 @@
             {{ post.data.summary }}
           </p>
         {% endif %}
+        {% if post.data.image.src %}
+          <img src="{{ post.data.image.src | url }}" alt="{{ post.data.image.alt }}" class="project-card__image object-cover lg:h-60 h-96 w-full border-solid border-2 rounded-sm p-4">
+        {% endif %}
         {% if post.data.tags %}
           <p class="tag-list">
             {% for tag in post.data.tags %}

@@ -19,10 +19,20 @@ section: project
       {% endfor %}
     </p>
   {% endif %}
-  {% if github %}
-    <button href="{{ github }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 my-3 rounded text-sm">
-      View on GitHub
-    </button>
+  <div id="view-buttons" class="space-x-2">
+    {% if github %}
+      <a href="{{ github }}" class="bg-blue-500 hover:bg-blue-700 text-white hover:text-white font-bold py-2 px-4 my-3 rounded text-sm" target="_blank">
+        View on GitHub
+      </a>
+    {% endif %}
+    {% if website %}
+      <a href="{{ website }}" class="bg-blue-500 hover:bg-blue-700 text-white hover:text-white font-bold py-2 px-4 my-3 rounded text-sm" target="_blank">
+        View live
+      </a>
+    {% endif %}
+  </div>
+  {% if image.src %}
+    <img src="{{ image.src | url }}" alt="{{ image.alt }}" class="project-card__image object-cover w-full border-solid border-2 rounded-sm p-4">
   {% endif %}
   <div>
     {{ layoutContent | safe }}
