@@ -15,7 +15,7 @@ tags:
   - HTML/CSS
 ---
 
-### About
+## About
 
 At work, one of my tasks is to assemble and send out email news bulletins every week. I generally stick to the same format every time using a consistent design containing the following pieces of content:
 
@@ -36,11 +36,11 @@ But now, I decided to come up with a better way. I'm about to be out of the offi
 
 Also, this is just a good project to practice using what I've been learning.
 
-### Usage
+## Usage
 
 Go to https://harmolipi.github.io/enb-builder/ and fill out the fields as needed. Preview will update as you type. You can click to maximize either of those panes, and data will be stored in your browser's localStorage so it's likely not lost if you close the page. When you're ready, click "Show HTML" at the bottom and click to copy that HTML into the body of the email elsewhere.
 
-### Setup
+## Setup
 
 ```bash
 npm install
