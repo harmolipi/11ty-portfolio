@@ -1,6 +1,5 @@
 ---
 title: Electronic News Bulletin Builder
-emoji: 📧
 metaDescription: Tool for injecting OCMC's email template with updated content for weekly email news bulletins.
 date: 2022-02-18T00:00:00.000Z
 summary: Tool for injecting OCMC's email template with updated content for weekly email news bulletins.

@@ -1,6 +1,5 @@
 ---
 title: Orthodox Calendar API
-emoji: ☦️
 metaDescription: This is a RESTful API for accessing Orthodox Calendar information for a given calendar date. It's based off of OCRA, but recreated in Rails.
 date: 2021-10-06T00:00:00.000Z
 summary: This is a RESTful API for accessing Orthodox Calendar information for a given calendar date. It's based off of OCRA, but recreated in Rails.

@@ -1,9 +1,8 @@
 ---
 title: Social Network
-emoji: 📧
-metaDescription: This is a simple Facebook clone. Users can create accounts (with email+password or through Facebook authentication), friend request one another, see their friends' posts on their feed, and like and comment on different posts.
+metaDescription: This is a simple Facebook clone. Users can create accounts (with email + password or through Facebook authentication), friend request one another, see their friends' posts on their feed, and like and comment on different posts.
 date: 2021-11-03T00:00:00.000Z
-summary: This is a simple Facebook clone. Users can create accounts (with email+password or through Facebook authentication), friend request one another, see their friends' posts on their feed, and like and comment on different posts.
+summary: This is a simple Facebook clone. Users can create accounts (with email + password or through Facebook authentication), friend request one another, see their friends' posts on their feed, and like and comment on different posts.
 github: https://github.com/harmolipi/odin-facebook
 image:
   src: /static/img/social-network.png
